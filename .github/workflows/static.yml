@@ -33,9 +33,9 @@ jobs:
         node-version: [18]
     steps:
       - name: show SECRET
-        run: Run echo ${{ secrets.HOGE }}
+        run: echo ${{ secrets.HOGE }}
       - name: show VARS
-        run: Run echo ${{ vars.FUGA }}
+        run: echo ${{ vars.FUGA }}
       - uses: actions/checkout@v3
       - uses: pnpm/action-setup@v2
         with:
