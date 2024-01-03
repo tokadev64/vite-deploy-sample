@@ -32,6 +32,10 @@ jobs:
       matrix:
         node-version: [18]
     steps:
+      - name: show SECRET
+        run: echo ${secret.HOGE}
+      - name: show VARS
+        run: echo ${vars.FUGA}
       - uses: actions/checkout@v3
       - uses: pnpm/action-setup@v2
         with:
