@@ -1,5 +1,9 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
+import HelloWorld from "./components/HelloWorld.vue";
+const HOGE = import.meta.env.HOGE;
+
+console.info(import.meta.env.HOGE);
+console.info(HOGE);
 </script>
 
 <template>
